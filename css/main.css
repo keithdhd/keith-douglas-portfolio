@@ -23,7 +23,9 @@ a:hover {
 	/* Tyopography Declarations */
 	color: #B2C8D6;
 }
-
+::selection{
+  background-color: #E35C56;
+}
 .content-footer,
 .masthead-heading,
 .masthead-intro {
@@ -48,11 +50,11 @@ a:hover {
 }
 
 .masthead-heading {
-    margin-top: -0.2em;
+    margin-top: 0.2em;
     font-weight: bold;
     font-size: 4em;
     letter-spacing: -0.02em;
-    //text-transform: uppercase;
+    text-transform: uppercase;
     color:#293f50;
   	text-shadow: 0px 3px 0px #E35C56;
 }
@@ -65,10 +67,37 @@ a:hover {
 }
 .questions-section > h2 {
     /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
     font-size: 1.2em;
     font-weight: bold;
 }
+ .portfolio{
+   text-align: center;
+ }
+
+ .projects > li{
+  display: inline-block;
+  margin: 2.5rem;  
+ }
+
+.projects li a{
+    text-decoration: none;
+}
+ .portfolio h2{
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size:3rem;
+  font-weight: 400;
+  color:black;
+}
+
+.caption h3{
+  line-height: 3rem;
+  font-size:1.2rem;
+  color: black;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+}
+
 
 .content-footer > p,
 .introduction-section,
@@ -109,9 +138,15 @@ Media Queries
     .masthead-heading {
         font-size: 3em;
     }
-  
-  .masthead{
+    .masthead-intro{
+      display: none;
+    }.masthead{
        padding: 3em 0; 
     }
+    .introduction-section,
+    .location-section,
+    .questions-section {
+      text-align: center;
+      margin:0 20px;
 }
 
